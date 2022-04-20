@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CD620DAC-243B-6F3F-D4F9-A80CA2BFD456}</ProjectGuid>
+    <ProjectGuid>{7E83FDBA-FD4F-B897-D1F1-A3498BDFDDEF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,11 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\EnemyAI.cs" />
     <Compile Include="Assets\Script\Timer.cs" />
     <Compile Include="Assets\Script\player.cs" />
     <Compile Include="Assets\Script\playerAxis.cs" />
     <Compile Include="Assets\Script\portal.cs" />
-    <Compile Include="Assets\Script\EnemyAI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -627,15 +627,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
-      <Project>{86A56488-DFA3-5D89-BF12-081767897AED}</Project>
+      <Project>{0B2F4ED4-0424-A01F-0B94-65B9332C5F44}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
-      <Project>{E1E2BEFD-34A8-8CD7-5105-0575E5DE628D}</Project>
+      <Project>{AD901138-055A-2EE2-1090-8AF12ADFDEAE}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{43A4ACAA-64F2-FEAD-CFFE-88680550A009}</Project>
+      <Project>{E7956DE9-5F12-7315-C5B2-00F6257D0E55}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>
