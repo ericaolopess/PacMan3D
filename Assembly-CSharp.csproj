@@ -61,6 +61,7 @@
     <Compile Include="Assets\Script\player.cs" />
     <Compile Include="Assets\Script\playerAxis.cs" />
     <Compile Include="Assets\Script\portal.cs" />
+    <Compile Include="Assets\Script\GameControler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

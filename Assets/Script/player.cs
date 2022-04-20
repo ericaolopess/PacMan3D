@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class player : MonoBehaviour
 {
+
     Rigidbody rb;
     float speed;
  
@@ -32,6 +34,7 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
 		pegarProp = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         speed = 5;
@@ -54,6 +57,8 @@ public class player : MonoBehaviour
         Vector3 move = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
 
         rb.velocity = move * speed;
+
+        powerUp = GameControler.TimerUp(powerUp);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -90,8 +95,10 @@ public class player : MonoBehaviour
         if (other.tag == "powerUp")
         {
             powerUp = true;
+            powerUp = GameControler.TimerUp(true);
             Destroy(other.gameObject);
         }
+
     }
 
     private void UpPlayer()
